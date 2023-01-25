@@ -1,0 +1,283 @@
+body {
+    background: linear-gradient(to top, #1e0c36, #1e0c36, #1e0c36, #000000);
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0px 160px 0px;
+}
+
+.title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #fff;
+}
+
+.subtitle {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+}
+
+.first-screen {
+    /* background-image: url("1.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+
+.navigation-name {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 30px;
+    color: #fff;
+}
+
+.navigation-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.navigation-item {
+    text-decoration: none;
+    color: rgba(255, 255, 255);
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 30px;
+    font-size: 17px;
+
+    position: relative;
+	cursor: pointer;
+}
+
+.navigation-item:after {
+    display: block;
+	position: absolute;
+	left: 0px;
+	width: 0;
+	height: 2px;
+	background-color: #ffffff;
+	content: "";
+	transition: width 0.3s ease-out;
+
+}
+
+.navigation-item:hover:after,
+.navigation-item:focus:after {
+	width: 100%; 
+}
+
+.navigation-button {
+    margin-left: 20px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 15px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 17px;
+    padding: 10px 15px;
+    border: 3px solid black;
+    transition: ease-in-out 0.5s;
+}
+
+.navigation-button:hover {
+    color: black;
+    background-color: #fff;
+    border: 3px solid black;
+    padding: 10px 15px;
+
+}
+
+.main_title_screen {
+    display: flex;
+    color: #fff;
+    margin-right: 20%;
+}
+
+.main_title {
+    font-weight: 900;
+    font-size: 80px;
+
+    margin-bottom: 50px;
+
+    position: relative;
+}
+
+.main_title:after {
+    display: block;
+	position: absolute;
+	left: 0px;
+    bottom: -20px;
+	width: 350px;
+	height: 1px;
+	background: linear-gradient(to right, #ffffff, #000000);
+	content: "";
+
+}
+
+.main_text_screen {
+    margin-top: 250px;
+    top: -50px;
+    position: relative;
+}
+
+.main_button {
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(63, 24, 117);
+    padding: 17px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    border: 3px solid rgb(63, 24, 117);
+    transition: ease-in-out 0.5s;
+}
+
+.main_button:hover {
+    background-color: rgb(30, 4, 71);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.main_button-2 {
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(230, 212, 255);
+    padding: 17px;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    border: 3px solid rgb(230, 212, 255);
+    transition: ease-in-out 0.5s;
+}
+
+.main_button-2:hover {
+    background-color: rgb(30, 7, 68);
+    color: #fff;
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.second-screen {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    margin-bottom: 200px;
+}
+
+.planets {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left:120px;
+}
+
+.planet-card-1 {
+    width: 500px;
+    position: absolute;
+    top: 390px;
+    left: -40px;
+}
+
+.planet-card-2 {
+    width: 800px;
+}
+
+.last-screen {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+}
+
+.contact-photo {
+    width: 400px;
+}
+
+.main-planet-photo {
+    width: 900px;
+}
+
+@media (max-width:1000px) {
+
+    .navigation-name {
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 23px;
+        color: #fff;
+    }
+
+    .navigation-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60%;
+    }
+    
+    .navigation-item {
+        text-decoration: none;
+        color: rgba(255, 255, 255);
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 30px;
+        font-size: 14px;
+    
+        position: relative;
+        cursor: pointer;
+    }
+
+    .navigation-button {
+        font-size: 15px;
+    }
+    
+
+    .main-planet-photo {
+        width: 400px;
+        height: auto;
+        top: 400px;
+    }
+
+    .main_title {
+        font-size: 53px;
+    }
+
+    .main_subtitle {
+        font-weight: normal;
+        font-size: 17px;
+    }
+    
+    .main_title:after {
+        width: 300px;
+    }
+
+    .main_button {
+        text-decoration: none;
+        color: #fff;
+        background-color: rgb(63, 24, 117);
+        padding: 17px;
+        margin-top: 30px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 800;
+        border: 3px solid rgb(63, 24, 117);
+        transition: ease-in-out 0.5s;
+    }
+
+    .main_title_screen {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
